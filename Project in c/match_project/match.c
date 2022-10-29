@@ -4,13 +4,12 @@ int score(int);
 int main()
 {
     char a[20],b[20],n,c[20],d[20];
-    int k[2], h, i,g;
+    int k[2], h, i;
     printf("Enter the names of two teams\n");
     scanf("%s%s",&a,&b);
     printf("Enter The Team Who Won The Toss\n");
     scanf("%s",&c);
-    g=strcmp(c,a);
-    if (strcmp(c,a)==0||strcmp(c,a)==0)
+    if (strcmp(c,a)==0)
     {
         printf("Enter Choice\tfor batting press - 1\tand for bowling press - 2\n");
         scanf("%d",&h);
@@ -61,7 +60,7 @@ int main()
             printf("Now it's %s Team turn to Bat\n",c);
         }  
     }
-    if (k[0]>k[i])
+    if (k[0]>k[1])
     {
         printf("%s HAS WON THE MATCH",d);
     }
@@ -69,5 +68,4 @@ int main()
     {
         printf("%s HAS WON THE MATCH",c);
     }
-      
 }
